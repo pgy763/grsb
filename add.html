@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <title>产品信息</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 1200px;
+            height: 600px;
+            
+            margin: 100px auto;
+        }
+
+        h1{
+            margin-left: 550px;
+        }
+
+        select{
+            width: 100px;
+        }
+        option{
+            text-align: center;
+        }
+        .id1{
+            margin-top: 50px;
+            margin-left: 450px;
+        }
+        button{
+            width: 100px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>产品信息</h1>
+        <form action="http://127.0.0.1:5500/day13/list.html" target="_blank">
+            <div class="id1">
+                id:<input type="text" placeholder="请输入编号:">
+                <br><br><br>
+                name:<input type="text" placeholder="请输入名称:">
+                <br><br><br>
+                price: <input type="text" placeholder="请输入价格:">
+                <br><br><br>
+                number: <input type="text" placeholder="请输入数量:">
+                <br><br><br>
+                unit: 
+                <select name="" id="">
+                    <option value="">盒</option>
+                    <option value="">箱</option>
+                    <option value="">辆</option>
+                </select>
+                <br><br><br>
+                data-time:
+                <label for="date" class="form-label">日期:</label>
+                <input type="date" class="form-control" id="date" name="date">
+                <br><br><br>
+                batch:
+                <input type="text" placeholder="请输入批次:">
+                <br><br><br>
+                <button type="submit" class="btn btn-success">提交</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
